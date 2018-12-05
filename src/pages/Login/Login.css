@@ -1,0 +1,46 @@
+/*样式初始化*/
+*{margin:0;padding: 0;}
+.login-page a{text-decoration: none;color: #000;}
+img {border: 0; vertical-align:middle;} 
+ul li{list-style: none;}
+body,h1,h2,h3,h4,h5,h6{font: 12px 宋体,Times New Roman;}
+.login-page{
+    background:rgb(20,33,42);
+}
+/*预定义样式*/
+.login-page .w{width: 1000px;margin: 0 auto;}
+.login-page .fl{float: left;}
+.login-page .fr{float: right;}
+.login-page .clear{clear:both;}
+.login-page .center{margin:0 auto;}
+.login-page .border{border:1px solid red;}
+
+.login-page table{width: 360px;height: 240px;border:none;margin: 0 auto;}
+.login-page tr,th,td{height: 20px;}
+.login-page th{width: 60px;}
+.login-page input:focus{border: 2px solid orange;}
+/*用户登录*/
+.login-page .top{width: 100%;height: 100px;background: #fff; min-width: 1226px;}
+.login-page .top .logo{width: 1130px;height: 100px;}
+.login-page .form{width: 1130px;height:588px;background: no-repeat center center; }
+.login-page .login{width: 400px;height: 470px;/*border:1px solid #ff6700;*/margin:30px auto;background: #444;color:#fff;margin-right: 0px;border-radius: 4px;}
+.login-page .login .login_center{width: 360px;margin: 10px auto;}
+.login-page .login .login_top{margin: 10px 0;}
+.login-page .login .login_top .left{height: 40px;line-height: 40px;font-weight: bold;font-size: 20px;}
+.login-page .login .login_top .right{height: 40px;line-height: 40px;font-size: 13px;}
+.login-page .login .login_top .right a{color:red;font-weight: bold;}
+.login-page .login .login_top .right a:hover{color:orange;}
+.login-page .xian{height: 2px;background: #ff6700;margin:8px 0;}
+
+.login-page .login_main{padding:20px 0;}
+.login-page .login_main .username{font:16px Times New Roman;height: 40px;line-height: 40px;margin:35px 0;}
+.login-page .login_main .username .shurukuang{width: 220px;height: 30px;border:1px solid #ccc;padding:5px 10px; }
+.login-page .login_main .username .yanzhengma{width: 100px;height: 30px;border:1px solid #ccc;padding:5px 10px; }
+.login-page .login_main .username .shurukuang:focus{border: 1px solid blue;background: #F0FFFF;}
+.login-page .login_main .username .yanzhengma:focus{border: 1px solid blue;background: #F0FFFF;}
+.login-page .login_main .username .right{margin-left: 20px;}
+
+/*设置按钮样式*/
+.login-page .login .login_center .login_submit{margin: 15px auto;}
+.login-page .login .login_center .submit{border:none;width: 240px;height: 45px;margin-left:55px;background: #ff6700;color: #fff; font-size: 20px;font-weight: bold;letter-spacing: 2px;cursor:pointer;border-radius: 4px;}
+.login-page .login .login_center .submit:hover{border:1px solid #fff;}

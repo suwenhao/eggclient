@@ -1,0 +1,144 @@
+/*banner_x*/
+.banner_x {
+    width: 1226px;
+	height: 100px;
+	overflow: auto;
+}
+.banner_x .logo{
+    background: no-repeat center center;
+    width: 50px;
+    height: 100px;
+}
+.banner_x .ad_top{
+    width: 180px;
+    height: 100px;
+	background:  no-repeat center center;
+}
+.banner_x .banner-left{
+	float:left;
+}
+.banner_x .nav ul{
+	margin:0;
+	padding:0;
+}
+.banner_x .nav ul>li{
+	float: left;
+	height: 90px;
+	line-height: 90px; 
+	margin-top:10px;
+}
+
+.banner_x .nav ul>li>a{
+	display:inline-block;
+	color: #000;
+	font-size: 16px;
+	padding: 0 10px;
+}
+.banner_x .nav ul>li>a:hover{
+	color: rgb(255,103,0);
+}
+
+.bx-children{
+	width:100%;
+	min-width:1226px;
+	position:absolute;
+	top:140px;
+	left:0;
+	border-top: 1px solid #eee;
+	z-index: 100;
+	border-bottom: 1px solid #ccc;
+	overflow: hidden;
+}
+.children-list{
+	margin: 0 auto;
+	background:#fff;
+	z-index: 1001;
+	width: 1226px;
+	height: 200px;
+}
+
+.children-list li{
+	width:200px;
+	float: left;
+	text-align: center;
+	padding-top: 20px;
+	
+}
+.children-list li a{
+	display: inline-block;
+	height: 180px;
+}
+.children-list li img{
+	width:120px;
+	height: 120px;
+	margin: 0 auto;
+	float: left;
+}
+.children-list li a p{
+	padding: 0px;
+	text-align: center;
+	height: 22px;
+	line-height: 22px;
+}
+.banner_x .search{
+	width: 308px;
+	height: 100px;
+	line-height: 100px;
+}
+.banner_x .search .text{
+	width: 230px;
+	height:50px;
+	line-height: 50px;
+	font-size: 12px;
+	margin-top: 25px;
+}
+.banner_x .search .text:hover{
+	border-color: #ff6700;
+}
+.banner_x .search .text .shuru{
+	border: 1px solid #eee;
+	width: 230px;
+	padding:0 10px;
+	height: 50px;
+	border-right:0;
+}
+.banner_x .search .text .shuru:focus{
+	border-color: #ff6700;
+}
+.banner_x .search .submit{
+	width: 50px;
+	height:50px;
+	line-height: 50px;
+	text-align:center;
+	font-size: 12px;
+	margin-top: 25px;
+	border:1px solid #ccc;
+}
+.banner_x .search .submit .sousuo{
+	letter-spacing:3px;
+	text-align:center;
+	width: 50px;
+	height:50px;
+	border: none;
+	background: none;
+	cursor:pointer;
+}
+.banner_x .search .submit:hover{
+	border-color: #ff6700;
+	color:#ff6700;
+}
+.my-enter {
+	height: 0;
+	
+}
+.my-enter.my-active-enter {
+	height: 200px;
+	transition: height .5s;
+}
+/* .my-exit {
+	height: 200px;
+} */
+.my-exit.my-active-exit {
+	height: 0;
+	transition: height .5s;
+}

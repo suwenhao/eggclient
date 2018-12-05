@@ -1,0 +1,38 @@
+.xiangqing{width: 100%;height: 58px;background: rgb(240,240,240);}
+.xiangqing .neirong{height: 58px;width: 1226px;}
+.xiangqing .neirong .xiaomi6{width:300px;height: 58px;line-height: 58px;font-size: 
+22px;font-weight: bold;}
+.xiangqing .neirong nav{display:inline-block;width: 410px;height: 58px;line-height: 58px;}
+.xiangqing .neirong nav li{font-size:14px;float: left;display: block;margin:0px 5px;}
+.xiangqing .neirong nav li a{color: #333;font-size: 14px;}
+.xiangqing .neirong nav li a:hover{color:#ff6700;}
+/*jieshao*/
+.jieshao{height: 560px; }
+.jieshao .left{width:560px;height:560px;}
+.jieshao .right{width:620px;height: 600px;}
+.jieshao .right .jianjie{font-size: 14px;color: rgb(176,176,176);line-height: 20px;}
+.jieshao .right .jiage{font-size: 18px;color:#ff6700;font-weight: bold;}
+.jieshao .right .xzbb{height: 58px;line-height:58px;}
+.jieshao .right .xzbb .banben{height: 58px;line-height: 58px;width: 278px;cursor:pointer;margin-right: 5px;border:1px solid #e0e0e0;}
+.jieshao .right .xzbb .banben a{display:block;font-size: 18px;color:#000;padding:0 10px;}
+.jieshao .right .xzbb .banben a span{display: inline-block;margin-right: 10px;font-size: 14px;}
+.jieshao .right .xzbb .banben a:hover{color:#ff6700;}
+.jieshao .right .xzbb .banben:hover{border:1px solid #ff6700;}
+.jieshao .right .xzbb .banben a .yuandian{display: inline-block;height: 15px;width: 15px;border-radius: 50%;background: #000;margin-left: 80px;}
+/*选取详情*/
+.xqxq{overflow:hidden;width: 555px;background: rgb(255,255,255);padding:20px; background: #fafafa}
+/*是否下单*/
+.xiadan{height: 50px;line-height: 50px;}
+.xiadan .jrgwc{height: 50px;width: 200px;border:none;background:#ff6700;color:#fff;font-size: 18px;font-weight: bold;cursor:pointer;margin-right: 50px;}
+.xiadan .jrgwc:hover{border:1px solid #fff;}
+.product-info-page .swiper-pagination-bullet{
+	width: 38px!important;
+	height: 4px!important;
+    border: 0px !important;
+    background: rgba(0,0,0,0.4);
+    border-radius:0;
+}
+
+.product-info-page .swiper-pagination-bullet-active{
+	background:#555 !important;
+}

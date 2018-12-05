@@ -1,0 +1,8 @@
+.sub_banner{width: 1226px;height: 170px;margin-top: 15px;}
+.sub_banner .sidebar{width: 234px;height: 170px;}
+.sub_banner .sidebar div{width: 78px;height: 85px;marign:0;padding: 0;}
+.sub_banner .sidebar div a img{opacity:0.8;}
+.sub_banner .sidebar div a img:hover{opacity:1;}
+.sub_banner .datu{width: 316px;height: 170px;margin-left: 14px;}
+.sub_banner .datu a img{width: 316px;height: 170px;opacity:0.8;}
+.sub_banner .datu a img:hover{opacity:1;}
