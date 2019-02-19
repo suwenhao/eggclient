@@ -1,11 +1,12 @@
 import * as React from 'react'
 import {observable} from 'mobx'
-import {observer} from 'mobx-react';
 import { CSSTransition } from 'react-transition-group';
 import './BannerX.css'
+import {observer,inject} from 'mobx-react'
 
-@observer
+@inject('store') @observer
 class BannerX extends React.Component{
+    public store:any;
     public images:any = [
         require('./image/pinpai2.png'),
         require('./image/pinpai1.png'),
@@ -18,6 +19,7 @@ class BannerX extends React.Component{
         super(props);
         this.onMouseEnter = this.onMouseEnter.bind(this);
         this.onMouseLeave = this.onMouseLeave.bind(this);
+        this.store = props.store.appStore
     }
     public onMouseEnter(){
         this.hover = true
@@ -26,6 +28,14 @@ class BannerX extends React.Component{
         this.hover = false
     }
     public render() {
+        const liList:any[] = [];
+		this.store.$navCenter.forEach((v:any,i:any)=>{
+			liList.push(
+                <li data-id={v._id} key={i} onMouseEnter={this.onMouseEnter} onMouseLeave={this.onMouseLeave}>
+                    <a href="#" target="_blank">{v.title}</a>
+                </li>
+			);
+		})
         return (
             <div>
                 <div className="banner_x center">
@@ -38,19 +48,7 @@ class BannerX extends React.Component{
                         </a>
                         <div className="nav fl">
                             <ul className="clearfix" id="nav_list">
-                                <li onMouseEnter={this.onMouseEnter} onMouseLeave={this.onMouseLeave}>
-                                    <a href="#" target="_blank">小米手机</a>
-                                </li>
-                                <li>
-                                    <a href="#">红米</a>
-                                </li>
-                                <li><a href="#">平板·笔记本</a></li>
-                                <li><a href="#">电视</a></li>
-                                <li><a href="#">盒子·影音</a></li>
-                                <li><a href="#">路由器</a></li>
-                                <li><a href="#">智能硬件</a></li>
-                                <li><a href="#">服务</a></li>
-                                <li><a href="#">社区</a></li>
+                                {liList}
                             </ul>
                         </div>
                     </div>

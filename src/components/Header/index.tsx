@@ -1,15 +1,36 @@
 import * as React from 'react'
 import './Header.css'
+import {observer,inject} from 'mobx-react'
 
+@inject('store') @observer
 class Header extends React.Component{
+	public store:any;
+    constructor(props:any) {
+        super(props)
+        this.store = props.store.appStore
+    }
     public render() {
+		const liList:any[] = [];
+		this.store.$navTop.forEach((v:any)=>{
+			liList.push(
+				<li key={v._id}>
+					{
+						v.is_opennew === 1?
+						<a href="http://www.mi.com/" target="_blank">{v.title}</a>
+						:
+						<a href="http://www.mi.com/">{v.title}</a>
+					}
+				</li>
+			);
+			liList.push(<li key={v._id+'123456'}>|</li>)
+		})
         return (
             <header>
 			<div className="top center">
 				<div className="left fl">
 					<ul>
-						<li><a href="http://www.mi.com/" target="_blank">小米商城</a></li>
-						<li>|</li>
+						{liList}
+{/* 						
 						<li><a href="">MIUI</a></li>
 						<li>|</li>
 						<li><a href="">米聊</a></li>
@@ -26,7 +47,7 @@ class Header extends React.Component{
 						<li>|</li>
 						<li><a href="">问题反馈</a></li>
 						<li>|</li>
-						<li><a href="">Select Region</a></li>
+						<li><a href="">Select Region</a></li> */}
 						<div className="clear"/>
 					</ul>
 				</div>
