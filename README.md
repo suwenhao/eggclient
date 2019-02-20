@@ -8,9 +8,6 @@ egg开发的RBAC商城权限管理的前台页面，使用react+typescript+mobx+
 <img src="./doc/images/4.png" width="900">
 <img src="./doc/images/5.png" width="900">
 
-## 开始
-  - 有用户名的话使用用户名，没的话就直链
-
 ### 测试环境
 
 ```bash
